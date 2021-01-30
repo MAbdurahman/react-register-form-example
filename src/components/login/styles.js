@@ -22,6 +22,7 @@ export default makeStyles(theme => ({
 		padding: '20px',
    },
    textFieldStyle: {
-      width: '100%'
+      width: '100%',
+      marginBottom: '1em'
    }
 }));

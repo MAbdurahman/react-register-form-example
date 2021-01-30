@@ -16,25 +16,27 @@ export default function Login() {
    return (
       <Grid>
          <Paper elevation={10} className={classes.paperStyle} >
-            <Grid align='center' >
+            <Grid className={classes.heading} align='center' >
                <Avatar className={classes.avatarStyle}><PersonOutlineIcon /></Avatar>
                <h2>Login</h2>
             </Grid>
-            
-            <Grid fullWidth>
+
+            <Grid>
                <TextField
+                  className={classes.textFieldStyle}
                   type='text'
                   id="input-with-icon-grid"
                   label="Username"
-                  style={{ width: '96%' }}
+
                />
             </Grid>
-            <Grid fullWidth>
+            <Grid>
                <TextField
+                  className={classes.textFieldStyle}
                   type='password'
                   id="input-with-icon-grid"
                   label="Password"
-                  style={{ width: '96%' }}
+
                />
             </Grid>
          </Paper>
