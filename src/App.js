@@ -1,13 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
+import Login from './components/login/Login';
 
-export default class App extends Component {
-  render() {
-    return (
-      <div className='center'>
-        <h1>React-Register-Form-Example</h1>
-      </div>
-    )
-  }
-}
-
+export default function App() {
+  return (
+    <div>
+      <Login />
+    </div>
+  );
+};
