@@ -62,7 +62,8 @@ export default makeStyles(theme => ({
 		maxWidth: '420px',
 		margin: '30px auto',
       padding: '20px',
-      height: '70vh',
+      // maxHeight: '75vh',
+      height: '500px',
       // [theme.breakpoints.only('sm')]: {
       //    height: '75vh',
       // },
