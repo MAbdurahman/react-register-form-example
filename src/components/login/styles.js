@@ -39,6 +39,9 @@ export default makeStyles(theme => ({
 		display: 'flex',
 		flexDirection: 'row',
 		justifyContent: 'flex-start',
+		[theme.breakpoints.down('xs')]: {
+			marginLeft: '.9em',
+		},
 	},
 	heading: {
 		marginBottom: '2em',
@@ -61,16 +64,12 @@ export default makeStyles(theme => ({
 	paperStyle: {
 		maxWidth: '420px',
 		margin: '30px auto',
-      padding: '20px',
-      // maxHeight: '75vh',
-      height: '500px',
-      // [theme.breakpoints.only('sm')]: {
-      //    height: '75vh',
-      // },
-      // [theme.breakpoints.between('md', 'lg')]: {
-      //    height: '55px',
-      // }
-	
+		padding: '20px',
+		maxHeight: '75vh',
+		height: '500px',
+		// [theme.breakpoints.between('md', 'lg')]: {
+		//    height: '55px',
+		// }
 	},
 	textFieldContainer: {
 		display: 'flex',
