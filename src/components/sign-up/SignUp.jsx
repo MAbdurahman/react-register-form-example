@@ -1,18 +1,19 @@
-import { Avatar, Button, Grid, Paper, TextField, Typography } from '@material-ui/core';
+import { Avatar, Button, Grid, Link, Paper, TextField, Typography } from '@material-ui/core';
 import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
 import PhoneIcon from '@material-ui/icons/Phone';
 import EmailIcon from '@material-ui/icons/Email';
 import LockIcon from '@material-ui/icons/Lock';
 import LockOpenIcon from '@material-ui/icons/LockOpen';
-import { AccountCircle, LockRounded } from '@material-ui/icons';
+import { AccountCircle } from '@material-ui/icons';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import Checkbox from '@material-ui/core/Checkbox';
 import React from 'react';
-
 import useStyles from './styles';
 
 export default function SignUp() {
    const classes = useStyles();
    return (
-      <Grid>
+      <Grid className={classes.signup}>
          <Paper className={classes.signup__paperStyle} elevation={10} >
             <Grid className={classes.signup__heading} align='center'>
                <Avatar className={classes.signup__avatarStyle}>
@@ -69,6 +70,14 @@ export default function SignUp() {
                   label='Confirmed Password'
                />
             </Grid>
+            <FormControlLabel
+               control={
+                  <Checkbox
+                     name="checkedA"
+                     color='primary'
+                  />}
+               label='Terms and conditions accepted'
+            />
             <Button
                className={classes.signup__buttonStyle}
                type='submit'
@@ -77,6 +86,13 @@ export default function SignUp() {
             >
                Sign Up
             </Button>
+
+            <Typography >
+               <Link className={classes.signup__linkStyle} href="#" >
+                  Terms and Conditions
+                  </Link>
+            </Typography>
+
          </Paper>
       </Grid>
    );
