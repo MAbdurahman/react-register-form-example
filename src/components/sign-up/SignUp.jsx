@@ -34,7 +34,7 @@ export default function SignUp() {
 
                />
             </Grid>
-            <Grid className={classes.signup__textFieldContainer}>
+            {/* <Grid className={classes.signup__textFieldContainer}>
                <PhoneIcon className={classes.signup__textFieldIcon} />
                <TextField
                   className={classes.signup__textFieldStyle}
@@ -42,7 +42,7 @@ export default function SignUp() {
                   // id="input-with-icon-grid"
                   label='Phone'
                />
-            </Grid>
+            </Grid> */}
             <Grid className={classes.signup__textFieldContainer}>
                <EmailIcon className={classes.signup__textFieldIcon} />
                <TextField
