@@ -44,7 +44,6 @@ export default makeStyles(theme => ({
 		fontWeight: 800,
 	},
 	signin__linkStyle: {
-      
 		textDecoration: 'none',
 		textTransform: 'capitalize',
 		color: '#423E37',

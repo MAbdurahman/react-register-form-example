@@ -13,7 +13,7 @@ export default makeStyles(theme => ({
 	},
 	signup__buttonStyle: {
 		margin: '8px 0',
-		marginBottom: '.7em',
+		marginBottom: '1em',
 		fontSize: '1.3rem',
 		fontWeight: 500,
 		letterSpacing: '2px',
@@ -24,6 +24,7 @@ export default makeStyles(theme => ({
 		'&:hover': {
 			backgroundColor: '#3F51B5',
 			color: '#FDEBD3',
+			textTransform: 'uppercase',
 		},
 	},
 	signup__caption: {
@@ -38,13 +39,16 @@ export default makeStyles(theme => ({
 	},
 	signup__linkStyle: {
 		fontSize: '.66rem',
-		textDecoration: 'underline',
+		textDecoration: 'none',
+		textTransform: 'capitalize',
+		color: '#423E37',
 		transition: 'all .333s cubic-bezier(0.25, 0.45, 0.45, 0.95)',
 		'&:hover': {
-			color: '#423E37',
-			fontSize: '.5rem',
-			letterSpacing: '1px',
+			color: '#3F51B5',
 			textDecoration: 'none',
+			fontWeight: '900',
+			textTransform: 'uppercase',
+			letterSpacing: '1px',
 		},
 	},
 	signup__paperStyle: {
@@ -52,7 +56,6 @@ export default makeStyles(theme => ({
 		maxWidth: '420px',
 		// height: '80vh',
 		margin: '0 auto',
-		// marginTop: '5em',
 		padding: '20px',
 		[theme.breakpoints.up('sm')]: {
 			marginTop: '5em',
