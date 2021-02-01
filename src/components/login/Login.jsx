@@ -26,7 +26,7 @@ export default function Login() {
                   className={classes.textFieldStyle}
                   type='text'
                   id="input-with-icon-grid"
-                  label="Username"
+                  label="Email"
 
                />
             </Grid>

@@ -2,6 +2,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles(theme => ({
 	signup: {
+		marginTop: '1.125em',
 		textAlign: 'center',
 		fontSize: '.7rem',
 	},
@@ -35,7 +36,7 @@ export default makeStyles(theme => ({
 		fontWeight: 800,
 	},
 	signup__linkStyle: {
-      fontSize: '.66rem',
+		fontSize: '.66rem',
 		textDecoration: 'underline',
 		'&:hover': {
 			color: '#423E37',
@@ -44,9 +45,13 @@ export default makeStyles(theme => ({
 	signup__paperStyle: {
 		maxHeight: '630px',
 		maxWidth: '420px',
-		height: '80vh',
-		margin: '15px auto',
+		// height: '80vh',
+		margin: '0 auto',
+		// marginTop: '5em',
 		padding: '20px',
+		[theme.breakpoints.up('sm')]: {
+			marginTop: '5em',
+		},
 	},
 	signup__textFieldContainer: {
 		display: 'flex',
