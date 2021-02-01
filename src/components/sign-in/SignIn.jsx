@@ -9,7 +9,7 @@ import useStyles from './styles';
 export default function SignIn() {
    const classes = useStyles();
    return (
-      <Grid>
+      <Grid className={classes.signin}>
          <Paper className={classes.signin__paperStyle} elevation={10}>
             <Grid className={classes.signin__heading} align='center' >
                <Avatar className={classes.signin__avatarStyle}><PersonOutlineIcon /></Avatar>
@@ -21,7 +21,7 @@ export default function SignIn() {
                   className={classes.signin__textFieldStyle}
                   type='email'
                   // id="input-with-icon-grid"
-                  label="Email"
+                  label="Username"
                />
             </Grid>
             <Grid className={classes.signin__textFieldContainer}>
@@ -53,17 +53,19 @@ export default function SignIn() {
             >
                Sign In
             </Button>
-            <Grid>
+            <Grid className={classes.signin__linkStyleContainer}>
                <Typography >
-                  <Link className={classes.linkStyle} href="#" >
-                     Forgot password?
+                  <Link className={classes.signin__linkStyle} href="#" >
+                     Forgot password
                   </Link>
+                  ?
                </Typography>
                <Typography>
                   Do you have an account?&nbsp;&nbsp;
-                  <Link className={classes.linkStyle} href="#" >
+                  <Link className={classes.signin__linkStyle} href="#" >
                      Sign Up
                   </Link>
+                  !
                </Typography>
             </Grid>
          </Paper>

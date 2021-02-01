@@ -3,7 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 export default makeStyles(theme => ({
 	signin: {
 		marginTop: '1.125em',
-		textAlign: 'center',
 		fontSize: '.7rem',
 	},
 	signin__avatarStyle: {
@@ -20,9 +19,11 @@ export default makeStyles(theme => ({
 		textTransform: 'capitalize',
 		backgroundColor: '#423E37',
 		color: '#EDEBD7',
+		transition: 'all .333s cubic-bezier(0.25, 0.45, 0.45, 0.95)',
 		'&:hover': {
 			backgroundColor: '#3F51B5',
 			color: '#FDEBD3',
+			textTransform: 'uppercase',
 		},
 	},
 	signin__formControlStyle: {
@@ -31,33 +32,44 @@ export default makeStyles(theme => ({
 		display: 'flex',
 		flexDirection: 'row',
 		justifyContent: 'flex-start',
-		[theme.breakpoints.down('xs')]: {
-			marginLeft: '.9em',
-		},
+		// [theme.breakpoints.down('xs')]: {
+		// 	marginLeft: '.9em',
+		// },
 	},
 	signin__heading: {
-		marginBottom: '2em',
+		marginBottom: '.7em',
 	},
 	signin__headingTitle: {
 		fontSize: '2rem',
 		fontWeight: 800,
 	},
 	signin__linkStyle: {
-		textDecoration: 'underline',
+      
+		textDecoration: 'none',
+		textTransform: 'capitalize',
+		color: '#423E37',
+		transition: 'all .333s cubic-bezier(0.25, 0.45, 0.45, 0.95)',
 		'&:hover': {
-			color: '#423E37',
+			color: '#3F51B5',
+			textDecoration: 'none',
+			fontWeight: '900',
+			textTransform: 'uppercase',
+			letterSpacing: '1px',
 		},
-	},
+   },
+   signin__linkStyleContainer: {
+      marginTop: '-1em',
+      marginBottom: '1em',
+   },
 	signin__margin: {
 		margin: theme.spacing(1),
 		width: '100%',
 	},
 	signin__paperStyle: {
 		maxWidth: '420px',
+		maxHeight: '550px',
 		margin: '30px auto',
 		padding: '20px',
-		maxHeight: '75vh',
-		height: '500px',
 		// [theme.breakpoints.between('md', 'lg')]: {
 		//    height: '55px',
 		// }

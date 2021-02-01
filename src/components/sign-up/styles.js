@@ -20,6 +20,7 @@ export default makeStyles(theme => ({
 		textTransform: 'capitalize',
 		backgroundColor: '#423E37',
 		color: '#EDEBD7',
+		transition: 'all .333s cubic-bezier(0.25, 0.45, 0.45, 0.95)',
 		'&:hover': {
 			backgroundColor: '#3F51B5',
 			color: '#FDEBD3',
@@ -38,8 +39,12 @@ export default makeStyles(theme => ({
 	signup__linkStyle: {
 		fontSize: '.66rem',
 		textDecoration: 'underline',
+		transition: 'all .333s cubic-bezier(0.25, 0.45, 0.45, 0.95)',
 		'&:hover': {
 			color: '#423E37',
+			fontSize: '.5rem',
+			letterSpacing: '1px',
+			textDecoration: 'none',
 		},
 	},
 	signup__paperStyle: {
