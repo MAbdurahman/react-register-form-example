@@ -2,9 +2,9 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles(theme => ({
 	signup: {
-		marginTop: '1.125em',
+		// marginTop: '1.125em',
 		textAlign: 'center',
-		fontSize: '.7rem',
+		fontSize: '.5rem',
 	},
 	signup__avatarStyle: {
 		marginBottom: '.5em',
@@ -58,7 +58,7 @@ export default makeStyles(theme => ({
 		margin: '0 auto',
 		padding: '20px',
 		[theme.breakpoints.up('sm')]: {
-			marginTop: '5em',
+			// marginTop: '5em',
 		},
 	},
 	signup__textFieldContainer: {

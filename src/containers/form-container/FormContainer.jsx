@@ -30,17 +30,18 @@ export default function FormContainer() {
             {...other}
          >
             {value === index && (
-               <Box p={3}>
+               <Box>
                   <Typography>{children}</Typography>
                </Box>
             )}
          </div>
       );
-   }
+   };
 
    return (
-      <Paper square>
+      <Paper className={classes.formContainer__paperStyle} elevation={20}>
          <Tabs
+         className={classes.formContainer__tabs}
             value={value}
             indicatorColor="primary"
             textColor="primary"

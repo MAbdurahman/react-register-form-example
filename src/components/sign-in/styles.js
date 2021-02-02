@@ -2,8 +2,8 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles(theme => ({
 	signin: {
-		marginTop: '1.125em',
-		fontSize: '.7rem',
+		// marginTop: '1.125em',
+		fontSize: '.5rem',
 	},
 	signin__avatarStyle: {
 		marginBottom: '.5em',
@@ -66,8 +66,9 @@ export default makeStyles(theme => ({
 	},
 	signin__paperStyle: {
 		maxWidth: '420px',
-		maxHeight: '550px',
-		margin: '30px auto',
+		// maxHeight: '550px',
+		maxHeight: '630px',
+		margin: '0 auto',
 		padding: '20px',
 		// [theme.breakpoints.between('md', 'lg')]: {
 		//    height: '55px',
