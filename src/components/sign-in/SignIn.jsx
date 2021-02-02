@@ -6,6 +6,7 @@ import Checkbox from '@material-ui/core/Checkbox';
 import React from 'react';
 import useStyles from './styles';
 
+
 export default function SignIn() {
    const classes = useStyles();
    return (
@@ -20,6 +21,7 @@ export default function SignIn() {
                <TextField
                   className={classes.signin__textFieldStyle}
                   type='email'
+                  placeholder='email address'
                   // id="input-with-icon-grid"
                   label="Username"
                />
