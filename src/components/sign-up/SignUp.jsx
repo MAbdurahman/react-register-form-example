@@ -70,14 +70,6 @@ export default function SignUp() {
                   label='Confirmed Password'
                />
             </Grid>
-            <FormControlLabel
-               control={
-                  <Checkbox
-                     name="checkedA"
-                     color='primary'
-                  />}
-               label='Terms and conditions accepted'
-            />
             <Button
                className={classes.signup__buttonStyle}
                type='submit'

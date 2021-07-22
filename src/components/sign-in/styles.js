@@ -52,7 +52,6 @@ export default makeStyles(theme => ({
 			color: '#3F51B5',
 			textDecoration: 'none',
 			fontWeight: '900',
-			textTransform: 'uppercase',
 			letterSpacing: '1px',
 		},
    },
